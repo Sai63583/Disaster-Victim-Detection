@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Victim Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Disaster victim detection system</h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Disaster Victim Detection System</h1>
+            <p>Advanced technology for rapid identification and rescue of disaster victims</p>
+            <button class="cta-button">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-camera fa-2x"></i>
+                </div>
+                <h3>Real-time Detection</h3>
+                <p>Instant identification of victims using advanced image processing</p>
+                <div class="feature-details">
+                    <ul>
+                        <li><i class="fas fa-check"></i> ML&DL-powered detection</li>
+                        <li><i class="fas fa-check"></i> Real-time processing</li>
+                        <li><i class="fas fa-check"></i> High accuracy rate</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                </div>
+                <h3>Image Based Detection</h3>
+                <p>processed images and more data for efficient rescue operations</p>
+                <div class="feature-details">
+                    <ul>
+                        <li><i class="fas fa-check"></i> victim identification</li>
+                        <li><i class="fas fa-check"></i> Immediate Response</li>
+                        <li><i class="fas fa-check"></i>  Real-time detection</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bell fa-2x"></i>
+                </div>
+                <h3>Emergency Alerts</h3>
+                <p>Immediate notification system for emergency response teams</p>
+                <div class="feature-details">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Instant notifications</li>
+                        <li><i class="fas fa-check"></i> Multi-channel alerts</li>
+                        <li><i class="fas fa-check"></i> Contact Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                </div>
+                <h3>Data Analytics</h3>
+                <p>Comprehensive analysis and reporting of detection data</p>
+                <div class="feature-details">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Custom reporting</li>
+                        <li><i class="fas fa-check"></i> Pattern recognition</li>
+                        <li><i class="fas fa-check"></i> Feed Back</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details Section -->
+    <section id="technical" class="technical">
+        <h2>Technical Implementation</h2>
+        <div class="pipeline-steps">
+            <div class="step">
+                <h3>Data Collection</h3>
+                <p>Comprehensive dataset of disaster scenes with labeled victim locations, including various environmental conditions and scenarios of disasters.</p>
+                    <ul>
+                        <li><i class="check"></i> Collect Victims Data</li>
+                        <li><i class="check"></i> Drones Data</li>
+                        <li><i class="check"></i> Vedio Feeds </li>
+                    </ul>
+            </div>
+            <div class="step">
+                <h3>Data Preprocessing</h3>
+                <p>The Images should be normalization and resizing the images to standard dimensions for consistent input quality.                               </p>
+                <ul>
+                    <li><i class="check"></i> Normalization</li>
+                    <li><i class="check"></i> Resizing</li>
+                    <li><i class="check"></i> Quality Input</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Data Augmentation</h3>
+                <p>The dataset should be Enhanced  through rotation, scaling, and brightness adjustments to improve the model robustness.                        </p>
+                <ul>
+                    <li><i class="check"></i> Rotation</li>
+                    <li><i class="check"></i> Scaling</li>
+                    <li><i class="check"></i> Brightning</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Feature Extraction</h3>
+                <p>The ResNet50 architecture for deep learning image feature extraction, leveraging pre-trained weights for optimal performance.                 </p>
+                <ul>
+                    <li><i class="check"></i> Feature extraction</li>
+                    <li><i class="check"></i> Pooling Layer</li>
+                    <li><i class="check"></i> Fully Connected Layer</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Classification</h3>
+                <p>Random Forest classifier for final victim detection, providing high accuracy and interpretable results.                                        </p>
+                <ul>
+                    <li><i class="check"></i> Random Forest</li>
+                    <li><i class="check"></i> Binary Classification</li>
+                    <li><i class="check"></i> Victim Detection</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Back End</h3>
+                <p>Using the Flask Python microframework to build the server-side logic and functionality of a web application.                                        </p>
+                <ul>
+                    <li><i class="check"></i> HTTP Methods</li>
+                    <li><i class="check"></i> Request & Response</li>
+                    <li><i class="check"></i> Routing</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Front End</h3>
+                <p>Created user interactive website with layout,functionality,using technologies like HTML,CSS,JS.                                        </p>
+                <ul>
+                    <li><i class="check"></i> Hyper Text Markup Language(HTML)</li>
+                    <li><i class="check"></i> Cascading Style Sheet(CSS)</li>
+                    <li><i class="check"></i> Java Scrpt(JS)</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Integration Frontend & Backend</h3>
+                <p>it Involves establishing a communication channel typically through API and return necessary Information.                                        </p>
+                <ul>
+                    <li><i class="check"></i> Hyper Text Markup Language(HTML)</li>
+                    <li><i class="check"></i> Cascading Style Sheet(CSS)</li>
+                    <li><i class="check"></i> Java Scrpt(JS)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="about">
+    <h2>About Our Project System</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>Our system provides binary classification for disaster scenes: detecting whether victims are present or not. This straightforward approach enables rapid assessment and resource allocation in emergency and disaster situations.</p>
+        </div>
+        <div class="upload-demo">
+            <h3>Disaster Victim Detection System</h3>
+            <div class="upload-container">
+                <!-- File Upload Input -->
+                <input type="file" id="imageUpload" accept="image/*" class="file-input" onchange="previewImage(event)">
+                <label for="imageUpload" class="upload-label">
+                    Click to Upload Image
+                </label>
+                <div id="preview" class="image-preview"></div>
+                
+                <!-- Submit Button -->
+                <button id="predict-btn">Predict</button>
+                
+                <!-- Prediction Result -->
+                <h3 id="prediction-result">Prediction: </h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function previewImage(event) {
+        const preview = document.getElementById("preview");
+        preview.innerHTML = ""; // Clear previous preview
+
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = document.createElement("img");
+                img.src = e.target.result;
+                img.style.maxWidth = "300px";
+                img.style.borderRadius = "10px";
+                preview.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+
+    document.getElementById("predict-btn").addEventListener("click", async function() {
+        const fileInput = document.getElementById("imageUpload");
+        const predictionResult = document.getElementById("prediction-result");
+
+        if (!fileInput.files.length) {
+            alert("Please upload an image first!");
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append("file", fileInput.files[0]);
+
+        const response = await fetch("/predict", {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.json();
+        predictionResult.innerText = result.error ? "Error: " + result.error : "Prediction: " + result.prediction;
+    });
+</script>
+
+<style>
+    .upload-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .file-input {
+        display: none;
+    }
+    .upload-label {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .upload-label:hover {
+        background-color: #0056b3;
+    }
+    .image-preview img {
+        margin-top: 10px;
+        max-width: 300px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+    }
+    #predict-btn {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    #predict-btn:hover {
+        background-color: #218838;
+    }
+    #prediction-result {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Services</h2>
+        <div class="contact-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Emergency Email or Phone number:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"> Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Alert</button>
+            </form>
+            <div class="emergency-info">
+                <h3>Emergency Services</h3>
+                <p>24/7 Emergency: <strong>9490406021-DISASTER</strong></p>
+                <p>Email: Siddani63583y@dvdsystem.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Disaster Victim Detection System.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#features">  Terms of Uses</a>
+                <a href="#contact">Emergency Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
