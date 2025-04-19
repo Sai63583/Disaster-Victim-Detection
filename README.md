@@ -1,7 +1,6 @@
-An Approach for
-Disaster Victim Detection Using ML
-¹ Dr. K. Swetha Sastry, ² MD. Abubakar Siddque, ³ S. Sai Ganesh, ⁴ N. Ganesh, ⁵ D. Sai Siddarth Department of Computer Science and Engineering, Ramachandra College of Engineering, Eluru. Emails: ¹ swetha.sastry@email.com ,² abubakarsiddque@email.com ,³ siddani63583@email.com ,
-⁴ nagulapalliganesh@email.com ,⁵ siddarthsai1919@email.com
+**An Approach for Disaster Victim Detection Using ML**
+ S. Sai Ganesh
+ siddani63583@email.com 
 
 
  
@@ -13,16 +12,6 @@ Disaster Response, Machine Learning, Deep Learning, Victim Detection, Image Clas
 1 INTRODUCTION
 Natural disasters such as earthquakes, floods, and wildfires cause widespread devastation, often leaving many people injured or trapped. In such critical situations, the ability to quickly locate and rescue victims is essential to saving lives. However, traditional search-and-rescue methods are predominantly manual, making them slow, and often ineffective in large-scale disasters. The increasing availability of drone footage, and surveillance cameras presents an opportunity to leverage artificial intelligence for automated disaster victim detection. Recent advancements in machine learning, particularly in computer vision, have enabled deep learning models to analyse images with high accuracy. Convolutional Neural Networks such as ResNet50 have demonstrated exceptional performance in feature extraction, making them ideal for victim identification. However, existing models face challenges such as high computational costs, false positives, and difficulties in real-time deployment. To address these issues, this research proposes a hybrid approach that combines ResNet50 for feature extraction with a Random Forest classifier for final decision-making. This combination ensures high accuracy while reducing computational complexity, making it suitable for real-time applications. The system is further deployed as a Flask API, allowing emergency responders to upload images and receive instant victim detection results. By automating the victim identification process, this research enhances the speed and efficiency of disaster response.
  
-
- 
-
-
-
-Figure1-Architecture of disaster victim detection system
-Structure of the Paper
-Section 2 explains the methodology, including dataset selection, preprocessing, model architecture, and deployment strategy.
-Section 3 presents the results, including performance metrics, a comparison with other models, and a discussion.
-Section 4 concludes with key findings and suggestions for future improvements.
 2.	LITERATURE REVIEW
 (a)	Traditional Approaches for Disaster Victim Detection
  
@@ -147,13 +136,6 @@ While the model performs exceptionally well, there are some limitations:
  
 (i)	Limited Dataset Variability: The dataset primarily includes specific disaster scenarios. Expanding it to cover a broader range of disasters (e.g., landslides, hurricanes) could improve generalization.
 (ii)	Environmental Challenges: Poor lighting, occlusions, and image distortions can affect detection accuracy. Advanced preprocessing and additional training data can help mitigate these
-
- 
-issues.
-Figure 2-Disaster Victim Detection System(No Victim Detected)
-Figure 3-Disaster Victim Detection System(Victim Detected)
-
-
 (iii)	Integration with UAVs and Video Feeds: Currently, the system works with static images. Future developments will focus on real-time video processing and drone-based victim detection.
 6.	CONCLUSION AND FUTURE WORK
 Disaster victim detection is a crucial task in emergency response operations, and traditional
@@ -184,32 +166,3 @@ Multi-sensor fusion (e.g., combining thermal imaging with regular cameras) will 
 (f)	Deployment as a Mobile Application
 To increase accessibility, the system can be integrated into a mobile application, allowing rescue workers to upload images and receive real-time predictions on the go.
 Future development will involve designing a mobile-friendly UI, making the system widely usable in disaster response operations.
-7.	REFERENCES
-[1]	G. Seeja, A. S. A. Doss, V. B. Hency, "A Novel Approach for Disaster Victim Detection Under Debris Environments Using Decision Tree Algorithms With Deep Learning Features," Journal Article, 2022.
-[2]	R. K. Gali, R. Nakka, "A Novel Approach for Disaster Victim Detection Under Debris Environments Using Decision Tree Algorithms With Deep Learning," International Journal of HRM and Organizational Studies, 2022.
-[3]	S. Mahmud, A. A. Fime, J. H. Kim, "ATR HarmoniSAR: A System for Enhancing Victim Detection in Robot-assisted Disaster Scenarios," IEEE Conference Proceedings, 2022.
-[4]	Y. J. Wong, M. L. Tham, B. H. Kwan, E. M. A.
-Gnanamuthu, "An Optimized Multi-Task Learning Model for Disaster Classification and Victim Detection in Federated Learning Environments," IEEE Journal, 2022.
-[5]	I. A. Sulistijono, T. Imansyah, M. Muhajir, "Implementation of Victims Detection Framework
- 
-on Post Disaster Scenario," IEEE Conference Proceedings, 2018.
-[6]	N. Zhang, F. Nex, G. Vosselman, N. Kerle, "Training a Disaster Victim Detection Network for UAV Search and Rescue Using Harmonious Composite Images," Remote Sensing, 2022.
-[7]	M. S. Sugavanam, M. S. Satheesh, J. Thilagavathi, "A Novel Approach for Disaster Victim Detection Under Debris Environments Using Decision Tree Algorithm with Deep Learning," AppliedGIS, 2022.
-[8]	D. Y. Devarakonda Sowmya, N. B. Dasari, "A New Method for Disaster Victim Detection Using YOLO Algorithm," Journal of Basic Science Index, 2024.
-[9]	M. L. Tham, Y. J. Wong, B. H. Kwan, Y. Owada, "Joint Disaster Classification and Victim Detection Using Multi-task Learning," IEEE Conference Proceedings, 2021.
-[10]	F. Ofli, P. Meier, M. Imran, C. Castillo, "Combining Human Computing and Machine Learning to Make Sense of Big (Aerial) Data for Disaster Response," Big Data Journal, 2016.
-[11]	A. J. Soto-Vergel, J. C. Velez, R. Amaya-Mier et al., "Ground Disaster Response: Recent Technological Advances, Challenges, and Future Trends," Disaster Response Studies, 2023.
-[12]	L. Dwarakanath, A. Kamsin, R. A. Rasheed et al., "Automated Machine Learning Approaches for Emergency Response and Coordination via Social Media in Disasters," IEEE Transactions on AI, 2021.
-[13]	H. H. de Boer, S. Blau, T. Delabarde et al., "The Role of Forensic Anthropology in Disaster Victim Identification (DVI)," Forensic Science International, 2019.
-[14]	J. A. Enoch, I. B. Oluwafemi, F. A. Ibikunle et al., "An Efficient No-Line-of-Sight Learning Approach for Victim Detection Using Genetic Algorithm and KNN," International Journal of AI Applications, 2024.
-[15]	J. A. Enoch, I. B. Oluwafemi, F. A. Ibikunle et al., "Developing a Recursive ML Model for Detecting Trapped Victims Using Static Dataset," AI and Disaster Management Journal, 2024.
-[16]	Z. Yang, J. Schafer, A. Ganz, "Disaster Response: Victims' Localization Using Bluetooth Low Energy Sensors," IEEE Sensors Journal, 2017.
- 
-[17]	A. Allen-Hall, D. McNevin, "Human Tissue Preservation for Disaster Victim Identification in Tropical Climates," Forensic Science International, 2012.
-[18]	M. T. Rafat, F. A. Hridy, R. I. Zaman et al., "Multimodal Human Detection in Disasters Using AI & DL," Artificial Intelligence Review, 2022.
-[19]	J. Watherston, D. McNevin, M. E. Gahan et al., "Emerging Tools for Genetic Recovery from Post- Mortem Samples," Genetics and Disaster Identification Journal, 2018.
-[20]	K. Abraham, M. Abdelwahab, M. Abo-Zahhad, "Classification and Detection of Natural Disasters Using ML & DL Techniques," Machine Learning in Disaster Studies, 2024.
-8 . ACKNOWLEDGMENTS
-We would like to express our sincere gratitude to Ramachandra College of Engineering, Eluru, for providing the necessary infrastructure and resources to successfully carry out this project on disaster victim detection using machine learning.
-We extend our heartfelt appreciation to our faculty mentors and advisors for their invaluable guidance, constructive feedback, and continuous encouragement throughout the research and implementation phases of this project. Their expertise has been instrumental in shaping our approach and improving the overall effectiveness of our system.
-Additionally, we acknowledge the support of our peers and colleagues for their insightful discussions and assistance during data collection, model training, and testing. Their contributions have significantly enhanced the quality and robustness of our work.
