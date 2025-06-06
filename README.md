@@ -1,7 +1,7 @@
 **An Approach for Disaster Victim Detection Using ML**
  S. Sai Ganesh
  siddani63583@email.com 
-
+Dataset: https://drive.google.com/drive/folders/1KDrDQOSeB7rt6_Ik-7fkd8Mrvj4kaWM1?usp=sharing
 
  
 Abstract:
